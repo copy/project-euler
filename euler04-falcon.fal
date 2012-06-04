@@ -1,0 +1,23 @@
+#!/usr/bin/falcon
+
+n1 = 100
+result = 0
+
+while n1 < 1000
+
+	n2 = 100
+	while n2 < 1000
+
+		n2++
+		product = n1 * n2
+		product_str = product.toString()
+
+		if product > result and product_str == product_str[-1:0]
+			result = product
+		end
+	end
+
+	n1++
+end
+
+> result
